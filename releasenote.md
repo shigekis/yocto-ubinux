@@ -144,7 +144,7 @@ Run the following commands.
  
 ### 4.3 Create rootfs from Userland Packages
 Please refer dnf-plugin-tui manual to create rootfs.
-https://github.com/ubinux/dnf-plugin-tui/blob/247737b5f08204bac6f8faf1f894d12a392e2555/README.md
+https://github.com/ubinux/dnf-plugin-tui/blob/dc41277946edbca76e375a72e4c0babd38d71d35/README.md
 
 
 ## 5. Notice
