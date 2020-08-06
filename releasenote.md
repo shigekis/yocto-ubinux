@@ -81,30 +81,40 @@ ubinux-kernel:
 
 - Kernel
   - File: ubinux-kernel-5.4.51_2020.07_r001.tar.xz
+  - Checksum file(sha256): ubinux-kernel-5.4.51_2020.07_r001.sum
 - Kernel for Layerscape
   - File: ubinux-kernel-lsdk-5.4.3_2020.07_r001.tar.xz
-
+  - Checksum file(sha256): ubinux-kernel-lsdk-5.4.3_2020.07_r001.sum
+  
 ### 3.2 Userland Packages
 - Packages for x86 (64bit)
   - File: x86_64-packages_2020.07_r001.tar.xz
+  - Checksum file(sha256): x86_64-packages_2020.07_r001.sum
 - Packages for Armv8 (64bit EL)
   - File: armv8_64el-packages_2020.07_r001.tar.xz
+  - Checksum file(sha256): armv8_64el-packages_2020.07_r001.sum
 - Packages for Armv7 and Armv8 (32bit EL)
   - File: armv7-packages_2020.07_r001.tar.xz
+  - Checksum file(sha256): armv7-packages_2020.07_r001.sum
 - Source Packages
   - File: 2020.07-src-packages_r001.tar.xz
+  - Checksum file(sha256): 2020.07-src-packages_r001.sum
 
 ### 3.3 Toolchain
 - Toolchain installer for x86 (64bit)
   - File: ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.07.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.07_r001.sum
 - Toolchain installer for Armv8 (64bit EL)
   - File: ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.07.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.07_r001.sum
 - Toolchain installer for Armv7 and Armv8 (32bit EL)
   - File: ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.07.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.07_r001.sum
 
 ### 3.4 License Files
 - SPDX Formatted License Files
   - File: spdx-2020.07_r001.tar.xz
+  - Checksum file(sha256): spdx-2020.07_r001.sum
 
 ## 4. Installation guide
 ### 4.1 Install Toolchain
@@ -134,16 +144,16 @@ Run the following commands.
 
 |CPU|[TYPE2]|
 |---|--------|
-|x86 (64bit)- |core2-64-ubinux-linux|
-|Armv8 (64bit EL)- |aarch64-ubinux-linux|
-|Armv8 (32bit EL)- |cortexa9t2hf-neon-ubinux-linux-gnueabi|
-|Armv7- |cortexa9t2hf-neon-ubinux-linux-gnueabi|
+|x86 (64bit)|core2-64-ubinux-linux|
+|Armv8 (64bit EL)|aarch64-ubinux-linux|
+|Armv8 (32bit EL)|cortexa9t2hf-neon-ubinux-linux-gnueabi|
+|Armv7|cortexa9t2hf-neon-ubinux-linux-gnueabi|
 
 
 `$ . /opt/ubinux/2020.07/environment-setup-[TYPE2]`
  
 ### 4.3 Create rootfs from Userland Packages
-Please refer dnf-plugin-tui manual to create rootfs.
+To create rootfs, see Section 3.1.2 and 3.1.3 of the dnf-plugin-tui documentation.
 https://github.com/ubinux/dnf-plugin-tui/blob/dc41277946edbca76e375a72e4c0babd38d71d35/README.md
 
 
