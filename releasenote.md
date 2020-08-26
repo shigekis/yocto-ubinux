@@ -1,4 +1,4 @@
-# ubinux-2020.07 Release Notes
+# ubinux-2020.08 Release Notes
 
 FUJITSU COMPUTER TECHNOLOGIES LIMITED
 Solution Development Dept. Software Div.
@@ -6,7 +6,7 @@ Solution Development Dept. Software Div.
 ## 1. Basic Information
 ### 1.1 Version Information
 - Yocto: 3.1
-- Kernel: 5.4.51
+- Kernel: 5.4.58
 - Kernel for Layerscape: 5.4.3
 - Toolchain
   - GCC: 10.1.0
@@ -21,104 +21,123 @@ Solution Development Dept. Software Div.
 - Armv7
 
 ### 1.3 Host OS Support
-- Ubuntu 18.04.4 LTS (64bit)
+- Ubuntu 20.04 LTS (64bit)
 
 ### 1.4 U-Boot for Layerscape Support
 - NXP Layerscape SDK v20.04 (U-Boot v2019.10)
 
 ## 2. Features
 ### 2.1 Security Fixes
-Following security issues have been fixed from ubinux-2020.06.
+Following security issues have been fixed from ubinux-2020.07.
+
+bind:
+- CVE-2020-8619
+
+busybox:
+- CVE-2018-1000500
+
+exiv2:
+- CVE-2019-13108
+- CVE-2019-13109
+- CVE-2019-13110
+- CVE-2019-13111
+- CVE-2019-13112
+- CVE-2019-13113
+- CVE-2019-13114
+- CVE-2019-13504
+- CVE-2019-14982
 
 ffmpeg:
-- CVE-2020-12284
+- CVE-2020-14212
 
-json-c:
-- CVE-2020-12762
+gdk-pixbuf:
+- CVE-2017-6312
+- CVE-2017-6313
+- CVE-2017-6314
 
-libjpeg-turbo:
-- CVE-2020-13790
+glibc:
+- CVE-2020-10029
+- CVE-2020-6096
 
-perl:
-- CVE-2020-10543
-- CVE-2020-10878
-- CVE-2020-12723
+lynis:
+- CVE-2019-13033
+- CVE-2020-13882
 
-ubinux-kernel:
-- CVE-2019-19947
-- CVE-2019-19965
-- CVE-2019-20636
-- CVE-2019-20812
-- CVE-2019-3016
-- CVE-2020-10690
-- CVE-2020-10711
-- CVE-2020-10942
-- CVE-2020-11494
-- CVE-2020-11565
-- CVE-2020-11608
-- CVE-2020-11609
-- CVE-2020-11668
-- CVE-2020-12464
-- CVE-2020-12465
-- CVE-2020-12652
-- CVE-2020-12653
-- CVE-2020-12654
-- CVE-2020-12657
-- CVE-2020-12659
-- CVE-2020-12769
-- CVE-2020-12770
-- CVE-2020-12826
-- CVE-2020-13143
-- CVE-2020-8428
-- CVE-2020-8647
-- CVE-2020-8648
-- CVE-2020-8649
-- CVE-2020-8992
-- CVE-2020-9383
+nativesdk-glibc:
+- CVE-2020-10029
+- CVE-2020-6096
+
+nativesdk-python3:
+- CVE-2020-14422
+
+nativesdk-qemu:
+- CVE-2012-3515
+- CVE-2014-3615
+- CVE-2014-3689
+- CVE-2014-5388
+- CVE-2014-7815
+- CVE-2014-7840
+
+net-snmp:
+- CVE-2019-20892
+
+python3:
+- CVE-2020-14422
+
+qemu:
+- CVE-2012-3515
+- CVE-2014-3615
+- CVE-2014-3689
+- CVE-2014-5388
+- CVE-2014-7815
+- CVE-2014-7840
+
+wireshark:
+- CVE-2020-15466
 
 ## 3. Release Contents
 ### 3.1 Kernel
 
 - Kernel
-  - File: ubinux-kernel-5.4.51_2020.07_r001.tar.xz
-  - Checksum file(sha256): ubinux-kernel-5.4.51_2020.07_r001.sum
+  - File: ubinux-kernel-5.4.58_2020.08_r001.tar.xz
+  - Checksum file(sha256): ubinux-kernel-5.4.58_2020.08_r001.sum
 - Kernel for Layerscape
-  - File: ubinux-kernel-lsdk-5.4.3_2020.07_r001.tar.xz
-  - Checksum file(sha256): ubinux-kernel-lsdk-5.4.3_2020.07_r001.sum
+  - File: ubinux-kernel-lsdk-5.4.3_2020.08_r001.tar.xz
+  - Checksum file(sha256): ubinux-kernel-lsdk-5.4.3_2020.08_r001.sum
   
 ### 3.2 Userland Packages
 - Packages for x86 (64bit)
-  - File: x86_64-packages_2020.07_r001.tar.xz
-  - Checksum file(sha256): x86_64-packages_2020.07_r001.sum
+  - File: x86_64-packages_2020.08_r001.tar.xz
+  - Checksum file(sha256): x86_64-packages_2020.08_r001.sum
 - Packages for Armv8 (64bit EL)
-  - File: armv8_64el-packages_2020.07_r001.tar.xz
-  - Checksum file(sha256): armv8_64el-packages_2020.07_r001.sum
+  - File: armv8_64el-packages_2020.08_r001.tar.xz
+  - Checksum file(sha256): armv8_64el-packages_2020.08_r001.sum
 - Packages for Armv7 and Armv8 (32bit EL)
-  - File: armv7-packages_2020.07_r001.tar.xz
-  - Checksum file(sha256): armv7-packages_2020.07_r001.sum
+  - File: armv7-packages_2020.08_r001.tar.xz
+  - Checksum file(sha256): armv7-packages_2020.08_r001.sum
 - Source Packages
-  - File: 2020.07-src-packages_r001.tar.xz
-  - Checksum file(sha256): 2020.07-src-packages_r001.sum
+  - File: 2020.08-src-packages_r001.tar.xz
+  - Checksum file(sha256): 2020.08-src-packages_r001.sum
 
 ### 3.3 Toolchain
 - Toolchain installer for x86 (64bit)
-  - File: ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.07.sh
-  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.07_r001.sum
+  - File: ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.08.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-core2-64-ubinux-x86-64-toolchain-2020.08_r001.sum
 - Toolchain installer for Armv8 (64bit EL)
-  - File: ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.07.sh
-  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.07_r001.sum
+  - File: ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.08.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-aarch64-ubinux-armv8-toolchain-2020.08_r001.sum
 - Toolchain installer for Armv7 and Armv8 (32bit EL)
-  - File: ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.07.sh
-  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.07_r001.sum
+  - File: ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.08.sh
+  - Checksum file(sha256): ubinux-glibc-x86_64-meta-toolchain-cortexa9t2hf-neon-ubinux-armv7-toolchain-2020.08_r001.sum
 
 ### 3.4 License Files
 - SPDX Formatted License Files
-  - File: spdx-2020.07_r001.tar.xz
-  - Checksum file(sha256): spdx-2020.07_r001.sum
+  - File: spdx-2020.08_r001.tar.xz
+  - Checksum file(sha256): spdx-2020.08_r001.sum
 
 ## 4. Installation guide
 ### 4.1 Install Toolchain
-Run as root privilege the Toolchain installer at arbitrary directory, and Toolchain will be installed into /opt/ubinux/2020.07 directory.
+Run as root privilege the Toolchain installer at arbitrary directory, and Toolchain will be installed into /opt/ubinux/2020.08 directory.
 
 
 [TYPE1] in the description, please read as shown below.
@@ -132,7 +151,7 @@ Run as root privilege the Toolchain installer at arbitrary directory, and Toolch
 |Armv7|cortexa9t2hf-neon-ubinux-armv7|
 
 
-`$ sudo sh ubinux-glibc-x86_64-meta-toolchain-[TYPE1]-toolchain-2020.07.sh`
+`$ sudo sh ubinux-glibc-x86_64-meta-toolchain-[TYPE1]-toolchain-2020.08.sh`
 
 
 ### 4.2 Set up Environment Variables
@@ -150,16 +169,13 @@ Run the following commands.
 |Armv7|cortexa9t2hf-neon-ubinux-linux-gnueabi|
 
 
-`$ . /opt/ubinux/2020.07/environment-setup-[TYPE2]`
+`$ . /opt/ubinux/2020.08/environment-setup-[TYPE2]`
  
 ### 4.3 Create rootfs from Userland Packages
 To create rootfs, see Section 3.1.2 and 3.1.3 of the dnf-plugin-tui documentation.
 https://github.com/ubinux/dnf-plugin-tui/blob/dc41277946edbca76e375a72e4c0babd38d71d35/README.md#312-initialize
 
 ## 5. Notice
-### 5.1 Removed packages
-Package of syslog-ng is removed. Please use systemd-journald to view the log.
-
 ### 5.2 Kernel
 Enable some kernel configs to use following features.
 - systemd
