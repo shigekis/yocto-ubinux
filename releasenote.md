@@ -176,6 +176,35 @@ To create rootfs, see Section 3.1.2 and 3.1.3 of the dnf-plugin-tui documentatio
 https://github.com/ubinux/dnf-plugin-tui/blob/dc41277946edbca76e375a72e4c0babd38d71d35/README.md#312-initialize
 
 ## 5. Notice
+### 5.1 Packages
+The usage of following packages have same changes, please refer to the help information for details:
+
+- mapscrn:
+Added 2 options:
+```
+    -C/--console=DEV
+    -h/--help
+```
+
+- setkeycodes:
+Added 2 options:
+```
+    -C/--console=DEV
+    -h/--help
+```
+
+- lynis:
+Removed 1 option: 
+```
+    –quick  
+```
+Added 3 options: 
+```
+    –forensics
+    --reverse-colours
+    –wait
+```
+
 ### 5.2 Kernel
 Enable some kernel configs to use following features.
 - systemd
